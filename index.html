@@ -6,67 +6,74 @@
 
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background: #f5f7fa;
+      background: #f4f6f9;
       color: #333;
     }
 
     header {
-      background: linear-gradient(135deg, #0a66c2, #004182);
+      background: linear-gradient(135deg, #0a66c2, #002f6c);
       color: white;
       text-align: center;
-      padding: 50px 20px;
+      padding: 60px 20px;
     }
 
     header h1 {
       margin: 0;
-      font-size: 32px;
+      font-size: 36px;
     }
 
     header p {
-      margin-top: 10px;
-      font-size: 16px;
-    }
-
-    section {
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    h2 {
-      color: #0a66c2;
-    }
-
-    .card {
-      background: white;
-      padding: 20px;
-      margin: 15px 0;
-      border-radius: 12px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      margin: 10px 0;
+      font-size: 18px;
     }
 
     .btn {
       display: inline-block;
       padding: 10px 18px;
-      margin: 10px 5px 0 0;
-      background: #0a66c2;
-      color: white;
+      margin: 10px 5px;
+      background: white;
+      color: #0a66c2;
       text-decoration: none;
-      border-radius: 6px;
-      font-size: 14px;
+      border-radius: 25px;
+      font-weight: bold;
     }
 
-    .btn:hover {
-      background: #004182;
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    h2 {
+      color: #0a66c2;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 5px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #0a66c2;
+    }
+
+    .projects {
+      display: grid;
+      gap: 15px;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background: #eee;
-      margin-top: 20px;
+      background: #eaeaea;
     }
   </style>
 </head>
@@ -77,12 +84,9 @@
   <h1>Jyoti Pal</h1>
   <p>Data Analyst | SQL • Power BI • Salesforce</p>
 
-  <!-- Buttons -->
-  <div>
-    <a href="https://github.com/jyotipal-datahub" class="btn">GitHub</a>
-    <a href="https://linkedin.com/in/jyoti-pal-7aa7701ab" class="btn">LinkedIn</a>
-    <a href="#" class="btn">Download Resume</a>
-  </div>
+  <a href="https://github.com/yourusername" class="btn">GitHub</a>
+  <a href="https://linkedin.com/in/jyoti-pal-7aa7701ab" class="btn">LinkedIn</a>
+  <a href="#" class="btn">Download Resume</a>
 </header>
 
 <section>
@@ -90,42 +94,55 @@
   <h2>About Me</h2>
   <div class="card">
     <p>
-      Data Analyst with 2+ years of experience in SQL, Excel, Power BI, and Salesforce.
-      Skilled in dashboard creation, data cleaning, and delivering insights to improve business performance.
+      Data Analyst with <span class="highlight">2+ years of experience</span> in SQL, Excel, Power BI, and Salesforce.
+      Delivered data-driven insights improving <span class="highlight">reporting efficiency by 40%</span> and
+      <span class="highlight">data accuracy by 20%</span>.
     </p>
   </div>
 
   <h2>Skills</h2>
   <div class="card">
-    <p>SQL • Python • Power BI • Excel • Salesforce • Data Analysis • ETL</p>
+    SQL • Python • Power BI • Excel • Salesforce • Data Cleaning • ETL • KPI Analysis
+  </div>
+
+  <h2>Key Achievements</h2>
+  <div class="card">
+    ✔ Improved reporting efficiency by 40% through dashboard automation <br><br>
+    ✔ Enhanced data accuracy by 20% via validation and cleaning <br><br>
+    ✔ Optimized SQL queries reducing data retrieval time by 30%
   </div>
 
   <h2>Projects</h2>
 
-  <div class="card">
-    <h3>Sales Funnel Dashboard</h3>
-    <p>
-      Built Power BI dashboards to track lead conversion, revenue, and KPIs, reducing reporting time by 40% and improving decision-making.
-    </p>
-  </div>
+  <div class="projects">
 
-  <div class="card">
-    <h3>Customer Churn Analysis</h3>
-    <p>
-      Analyzed customer data using SQL and Python to identify churn patterns and improve retention insights by 25%.
-    </p>
+    <div class="card">
+      <h3>Sales Funnel Analytics Dashboard</h3>
+      <p>
+        Built end-to-end sales funnel dashboard tracking lead conversion, revenue, and KPIs.
+        Identified drop-offs improving sales insights and decision-making.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Customer Churn Analysis</h3>
+      <p>
+        Analyzed customer behavior using SQL and Python to identify churn patterns and recommend retention strategies.
+      </p>
+    </div>
+
   </div>
 
   <h2>Contact</h2>
   <div class="card">
-    <p>Email: jyotipal.29.r@gmail.com</p>
-    <p>Location: Chennai, India</p>
+    📧 Email: jyotipal.29.r@gmail.com <br>
+    📍 Chennai, India
   </div>
 
 </section>
 
 <footer>
-  <p>© 2026 Jyoti Pal | Data Analyst Portfolio</p>
+  © 2026 Jyoti Pal | Data Analyst Portfolio
 </footer>
 
 </body>
